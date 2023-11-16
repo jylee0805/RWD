@@ -68,8 +68,12 @@ table {
     float: left;
     padding-right: 4px;
 }
-.fb a{
+.fb a {
     border-right: 1px solid black;
+    color:#4267b2 ;
+}
+.twitter a{
+    color: #24a3f2;
 }
 .header{
     margin-bottom: 40px;
