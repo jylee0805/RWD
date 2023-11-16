@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bar{
+    background: #F6F6F8;
+    height: 32px;
+
+}
+.bar ul{
+    display: flex;
+    float: right;
+    
+}
+.bar a{
+    text-align: center;
+    display: block;
+    padding: 0px 12px;
+    margin: 6px 0 6px 0;
+    text-decoration: none;
+    
+}
+.bar img{
+    float: left;
+    padding-right: 4px;
+}
+.fb a{
+    border-right: 1px solid black;
+}
+.header{
+    margin-bottom: 40px;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 151px;
+    height: 36px;
+    display: block;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background-image: url(../RWD/hexschool-logo.jpg);
+    background-repeat: no-repeat;
+    float: left ;
+    padding-top: 18px;
+}
+.menu{
+    float: right;
+    display: flex;
+}
+.menu a{
+    padding: 26px 21px;
+    text-decoration: none;
+    text-align: center;
+    color: #00251A;
+    font-weight: 700;
+    line-height: 24px;
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+
+}
+.course-item{
+    margin: .5%;
+    width: 31%;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .16) ;
+    border-radius: 5px;
+    line-height: 24px;
+}
+.course-item h2{
+    text-align: center;
+    padding: 12px 0 ;
+    font-size: 20px;
+    
+}
+.course-item img{
+   
+    max-width:100% ;
+    height: auto;
+}
+.course-item p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+}
+.course-item ul{
+    list-style: disc;
+    list-style-position: inside;
+}
+.course-item ul li{
+    padding-left: 5px;
+}
+@media(max-width:992px){
+    .course{
+        flex-wrap: wrap;
+    }
+    .course-item{
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 1%;
+    }
+    .img{
+        display: block;
+        margin: 0 auto;
+         
+    }
+}
+@media(max-width:768px){
+    .course{
+        flex-direction: column;
+    }
+    .course-item{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1%;
+    }
+    .course-item img{
+        display: block;
+        margin: 0 auto;
+         
+    }
+    .header{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        
+        
+    }
+    .menu li{
+        width: 50%;
+        line-height: 2.5;
+        text-align: center;
+        
+    }
+}
